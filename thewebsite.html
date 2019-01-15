@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rap Battle</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <style>
+  .cshdr {
+    top: 20px;
+    position: relative;
+  }
+  .tsghdr {
+    top: 15px;
+    position: relative;
+  }
+  .chatcensorimg {
+    position: relative;
+    left: 180px;
+    top: -60px;
+    float: right;
+  }
+  .nbjd {
+    position: relative;
+    top: 380px;
+  }
+  .tippytop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 185px;
+    height: 7.5px;
+    /*background-color: #c2b280;*/
+  }
+  .bottomheader {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #1d1e22;
+    opacity: 0.9;
+  }
+  .topheader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #393f4d;
+  }
+  .displayscroll {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+  .displaywidth {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+  }
+  .paragraphs {
+    position: absolute;
+    top: 88px;
+    left: 270px;
+    width: 50em;
+  }
+  .round {
+    border-radius: 100px;
+  }
+  .njp {
+    position: absolute;
+    width: 28em;
+    top: 16px;
+  }
+  .nextpage {
+    font-size: 35px;
+    text-decoration: none;
+    position: absolute;
+    top: 55.2px;
+    right: 50px;
+    color: white;
+  }
+  .nextpage:hover {
+    opacity: 0.6;
+  }
+  .nextpage:active {
+    opacity: 0.3;
+  }
+  .previouspage {
+    font-size: 35px;
+    text-decoration: none;
+    position: absolute;
+    top: 55.2px;
+    right: 140px;
+    color: white;
+  }
+  .previouspage:hover {
+    opacity: 0.6;
+  }
+  .previouspage:active {
+    opacity: 0.3;
+  }
+  .leftmenu {
+    background-color: #3a4660;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: 265px;
+    opacity: 0.8;
+  }
+  body{
+    background-color: #d4d4dc;
+    font-family: "Droid Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+  }
+  .sections {
+    color: white;
+  }
+  .tbmv {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    color: white;
+  }
+  .normalweight {
+    font-weight: normal;
+  }
+  .ttitle {
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    color: white;
+    text-align: center;
+    font-family: "Droid Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .tbcp {
+    width: 28em;
+    position: absolute;
+
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  a:active {
+    opacity: 0.4;
+  }
+  footer{
+    position: fixed;
+    top: 97%;
+  }
+  .vimg {
+    position: absolute;
+    left: 440px;
+  }
+  </style>
+  <script>
+    var initialWinHeight = $(window).height();
+    var initDocHeight;
+    window.setTimeout(function() {
+      initDocHeight = $(document).height();
+    }, 200);
+    function amountscrolled(){
+    var winWidth = $(window).width();
+    var docWidth = $(document).width();
+    var docHeight = $(document).height();
+    var winHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+    var scrollLength = initDocHeight - winHeight;
+    var percentScrolled = Math.floor(scrollTop/scrollLength * 100);
+    if (percentScrolled > 10) {
+      document.getElementById('bheader').style.top='0px';
+      document.getElementById('bheader').style.left='0px';
+      document.getElementById('bheader').style.position='fixed';
+      document.getElementById('stitle').style.top='5px';
+      document.getElementById('stitle').style.left='0px';
+      document.getElementById('stitle').style.position='fixed';
+      document.getElementById('nextbutton').style.top='5.2px';
+      document.getElementById('nextbutton').style.position='fixed';
+      document.getElementById('previousbutton').style.top='5.2px';
+      document.getElementById('previousbutton').style.position='fixed';
+      document.getElementById('tbmenu').style.top='50px';
+      document.getElementById('tbmenu').style.position='fixed';
+    }
+    else {
+      document.getElementById('bheader').style.top='50px';
+      document.getElementById('bheader').style.left='0px';
+      document.getElementById('bheader').style.position='absolute';
+      document.getElementById('stitle').style.top='55px';
+      document.getElementById('stitle').style.left='0px';
+      document.getElementById('stitle').style.position='absolute';
+      document.getElementById('nextbutton').style.top='55.2px';
+      document.getElementById('nextbutton').style.position='absolute';
+      document.getElementById('previousbutton').style.top='55.2px';
+      document.getElementById('previousbutton').style.position='absolute';
+      document.getElementById('tbmenu').style.top='100px';
+      document.getElementById('tbmenu').style.position='absolute';
+    }
+    };
+    $(window).on("scroll", function(){
+      amountscrolled();
+    })
+  </script>
+<body>
+  <div class="leftmenu"></div>
+
+  <div class="paragraphs">
+    <h1>What is Roblox Rap Battles?</h1>
+    <p>
+       What is Roblox Rap Battles you ask? Well it's where all the best
+       soundcloud rappers come to get discovered, and if they are not at that
+       point of their career yet, it is where they learn to freestyle like absolute
+       Gods.<br>
+    </p>
+
+    <h2 class="tsghdr">The Struggle of a Roblox Rapper</h2>
+    <img src="images/8vovjdn82bi11.png" alt="Chat Censor 1" class="chatcensorimg">
+    <h3 class="cshdr">Chat Censor</h3>
+    <p class="tbcp">
+      Roblox rappers have to go through many struggles, the first, and possibly the biggest hurdle of theirs is the <strong>chat censor</strong>.
+      Roblox rappers have been training themselves on how to get around this censor
+      for years and once they think they have finally mastered it a curve ball is thrown at them.
+      This clever censor hasn't been sleeping, it updates itself!
+      Many rappers that didn't grow their career on Roblox use bad words such as
+      the S word, the F bomb, and worst of all... <em>potty language</em>. This all has been
+      blocked on Roblox, so the rappers coming out from that area are the masters
+      of clean raps able for 5 year olds to responsibly hear.
+    </p>
+    <div class="nbjd">
+      <h3>Noob Judges</h3>
+      <p class="njp"> Often times a struggle for even the best of Roblox Rap Battler's
+        is having noob judges, because they do not know how to properly rate
+        the performances. This is a huge issue becuase at the highest level of
+        Roblox rappers every performance counts, and one slip up can ruin someones
+        ranking.
+      </p>
+      <img src="images/Screen Shot 2019-01-14 at 12.09.15 AM.png" alt="Vote" class="vimg">
+    </div>
+  </div>
+  <button type="button" onclick="document.getElementById('testing').style.position='static'">Click Me!</button>
+  <div id="bheader" class="bottomheader"></div>
+  <div id="theader" class="topheader"></div>
+  <p id="displaywindowsize" class="displayscroll"></p>
+  <p id="displaywindowwidth" class="displaywidth"></p>
+  <a href="thewebsite.html" class="ttitle" id="stitle">Roblox Rap Battles</a>
+  <a id="nextbutton" href="Rules.html" class="nextpage round">&nbsp;>&nbsp;</a>
+  <a id="previousbutton" href="censor.html" class="previouspage round">&nbsp;<&nbsp;</a>
+  <div class="tippytop"></div>
+  <table id="tbmenu" class="tbmv">
+    <tr>
+      <th class="normalweight">Big Chungus:</th>
+    <tr>
+      <td><a href="rules.html" class="sections">Rules of Rap</a></td>
+    </tr>
+    <tr>
+      <td><a href="flame.html" class="sections">How to <strong>flame</strong> your opponent</a></td>
+    </tr>
+    <tr>
+      <td><a href="close.html" class="sections">How to close</a></td>
+    </tr>
+    <tr>
+      <td><a href="censor.html" class="sections">About Me</a></td>
+    </tr>
+    <tr>
+      <td><a href="citations.html" class="sections"><em>Citations</em></a></td>
+    </tr>
+
+  </table>
+
+
+</body>
+<footer>&copy; Copyright 2019 Cleve Green</footer>
