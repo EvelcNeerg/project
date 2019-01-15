@@ -1,0 +1,167 @@
+.cshdr {
+  top: 20px;
+  position: relative;
+}
+.tsghdr {
+  top: 15px;
+  position: relative;
+}
+.chatcensorimg {
+  position: relative;
+  left: 180px;
+  top: -60px;
+  float: right;
+}
+.nbjd {
+  position: relative;
+  top: 380px;
+}
+.tippytop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 185px;
+  height: 7.5px;
+  /*background-color: #c2b280;*/
+}
+.bottomheader {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #1d1e22;
+  opacity: 0.9;
+}
+.topheader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #393f4d;
+}
+.displayscroll {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+.displaywidth {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+.paragraphs {
+  position: absolute;
+  top: 88px;
+  left: 270px;
+  width: 50em;
+}
+.round {
+  border-radius: 100px;
+}
+.njp {
+  position: absolute;
+  width: 28em;
+  top: 16px;
+}
+.nextpage {
+  font-size: 35px;
+  text-decoration: none;
+  position: absolute;
+  top: 55.2px;
+  right: 50px;
+  color: white;
+}
+.nextpage:hover {
+  opacity: 0.6;
+}
+.nextpage:active {
+  opacity: 0.3;
+}
+.previouspage {
+  font-size: 35px;
+  text-decoration: none;
+  position: absolute;
+  top: 55.2px;
+  right: 140px;
+  color: white;
+}
+.previouspage:hover {
+  opacity: 0.6;
+}
+.previouspage:active {
+  opacity: 0.3;
+}
+.leftmenu {
+  background-color: #3a4660;
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  width: 265px;
+  opacity: 0.8;
+}
+body{
+  background-color: #d4d4dc;
+  font-family: "Droid Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+.sections {
+  color: white;
+}
+.tbmv {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  color: white;
+}
+.normalweight {
+  font-weight: normal;
+}
+.ttitle {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  color: white;
+  text-align: center;
+  font-family: "Droid Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+}
+.tbcp {
+  width: 28em;
+  position: absolute;
+
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+a:active {
+  opacity: 0.4;
+}
+footer{
+  position: fixed;
+  top: 97%;
+}
+.vimg {
+  position: absolute;
+  left: 440px;
+}
+.rules {
+  position: absolute;
+  left: 400px;
+  top: 150px;
+  font-size: 30px;
+}
+.ptextr {
+  position: absolute;
+  left: 270px;
+  top: 400px;
+}
+.timg {
+  position: absolute;
+  left: 800px;
+  top: 180px;
+}

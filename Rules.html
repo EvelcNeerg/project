@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Rap Battle</title>
-  <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+  <link href="RulesStyle.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
     var initialWinHeight = $(window).height();
@@ -18,7 +18,7 @@
     var scrollTop = $(window).scrollTop();
     var scrollLength = initDocHeight - winHeight;
     var percentScrolled = Math.floor(scrollTop/scrollLength * 100);
-    if (percentScrolled > 10) {
+    if (percentScrolled > 24) {
       document.getElementById('bheader').style.top='0px';
       document.getElementById('bheader').style.left='0px';
       document.getElementById('bheader').style.position='fixed';
@@ -53,49 +53,35 @@
   </script>
 <body>
   <div class="leftmenu"></div>
-
-  <div class="paragraphs">
-    <h1>What is Roblox Rap Battles?</h1>
-    <p>
-       What is Roblox Rap Battles you ask? Well it's where all the best
-       soundcloud rappers come to get discovered, and if they are not at that
-       point of their career yet, it is where they learn to freestyle like absolute
-       Gods.<br>
-    </p>
-
-    <h2 class="tsghdr">The Struggle of a Roblox Rapper</h2>
-    <img src="images/8vovjdn82bi11.png" alt="Chat Censor 1" class="chatcensorimg">
-    <h3 class="cshdr">Chat Censor</h3>
-    <p class="tbcp">
-      Roblox rappers have to go through many struggles, the first, and possibly the biggest hurdle of theirs is the <strong>chat censor</strong>.
-      Roblox rappers have been training themselves on how to get around this censor
-      for years and once they think they have finally mastered it a curve ball is thrown at them.
-      This clever censor hasn't been sleeping, it updates itself!
-      Many rappers that didn't grow their career on Roblox use bad words such as
-      the S word, the F bomb, and worst of all... <em>potty language</em>. This all has been
-      blocked on Roblox, so the rappers coming out from that area are the masters
-      of clean raps able for 5 year olds to responsibly hear.
-    </p>
-    <div class="nbjd">
-      <h3>Noob Judges</h3>
-      <p class="njp"> Often times a struggle for even the best of Roblox Rap Battler's
-        is having noob judges, because they do not know how to properly rate
-        the performances. This is a huge issue becuase at the highest level of
-        Roblox rappers every performance counts, and one slip up can ruin someones
-        ranking.
-      </p>
-      <img src="images/Screen Shot 2019-01-14 at 12.09.15 AM.png" alt="Vote" class="vimg">
-    </div>
-  </div>
   <button type="button" onclick="document.getElementById('testing').style.position='static'">Click Me!</button>
   <div id="bheader" class="bottomheader"></div>
   <div id="theader" class="topheader"></div>
   <p id="displaywindowsize" class="displayscroll"></p>
   <p id="displaywindowwidth" class="displaywidth"></p>
   <a href="thewebsite.html" class="ttitle" id="stitle">Roblox Rap Battles</a>
-  <a id="nextbutton" href="Rules.html" class="nextpage round">&nbsp;>&nbsp;</a>
-  <a id="previousbutton" href="censor.html" class="previouspage round">&nbsp;<&nbsp;</a>
+  <a id="nextbutton" href="Flame.html" class="nextpage round">&nbsp;>&nbsp;</a>
+  <a id="previousbutton" href="thewebsite.html" class="previouspage round">&nbsp;<&nbsp;</a>
   <div class="tippytop"></div>
+  <div class="rules">
+    <p>
+      <strong>R</strong>espect<br><strong>U</strong>tilize your surroundings<br>
+      <strong>L</strong>isten to your opposition<br><strong>E</strong>nergy<br>
+      <strong>S</strong>how up
+    </p>
+  </div>
+  <div class="ptextr">
+    <h2>
+      The Reasoning Behind All of This
+    </h2>
+    <p>
+      <em>Respect</em> your opponent because you never know what will come back
+      to haunt you.<br><em>Utilize</em> your surroundings for when you are ever
+      at a loss for words.<br><em>Listen</em> to your opposition so you can better
+      defend yourself.<br><em>Energy</em> will persuade judges to vote for you!<br>
+      <em>Show</em> up or you lose.
+  </div>
+  <img src="images/Screen Shot 2019-01-13 at 5.12.40 PM.png" alt="Epic Rap" class="timg">
+
   <table id="tbmenu" class="tbmv">
     <tr>
       <th class="normalweight">Big Chungus:</th>
@@ -116,6 +102,7 @@
     </tr>
 
   </table>
+
 
 
 </body>
